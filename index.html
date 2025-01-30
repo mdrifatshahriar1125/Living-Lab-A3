@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/Group.png" type="image/png">
     <title>Living-Lab</title>
+    <!-- font style sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- tailwind css  cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyUI cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome kit link -->
+    <script src="https://kit.fontawesome.com/71c2b966f1.js" crossorigin="anonymous"></script>
      <!-- tailwind customize section -->
      <script>
         tailwind.config = {
@@ -22,10 +28,82 @@
           }
         }
       </script>
+      <style>
+         .sora-font {
+            font-family: "Sora", serif;
+
+        }
+        
+        .menu-ber-section {
+            display: none;
+        }
+
+        .mobile-logo {
+            display: none;
+        }
+
+        @media screen and (max-width:639px) {
+
+            .menu-ber-section {
+                display: inline-block;
+                width: 25px;
+            }
+
+            .mobile-logo {
+                display: inline-block;
+                width: 35px;
+            }
+
+            .nav-PSC-section {
+                display: none;
+            }
+
+            .nav-icon-btn {
+                display: none;
+            }
+
+            .logo-for-big-screen {
+                display: none;
+            }
+
+            .nbb {
+                border-bottom: 2px solid green;
+            }
+
+
+        }
+      </style>
 
 
 </head>
-<body>
-   
+<body class="sora-font">
+   <nav class="container mx-auto flex justify-between items-center mt-1 nbb ">
+    <div class="logo-for-big-screen">
+        <img class="h-8" src="assets/logo-header.png" alt="header logo">
+    </div>
+    <div class="mobile-logo">
+        <img src="assets/Group.png" alt="logo for mobile">
+    </div>
+    <div class="nav-PSC-section">
+        <ul class="flex gap-5 items-center">
+            <li>Product</li>
+            <li>Services</li>
+            <li>Contact us</li>
+
+        </ul>
+    </div>
+    <div class="nav-icon-btn">
+        <ul class="flex gap-5 items-center ">
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            <li><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><button class="border border-green-800 py-1 px-3 font-bold rounded-md">Login</button></li>
+            <li><button class="bg-green-700 text-white font-normal px-3 py-1 rounded-md">Register</button>
+            </li>
+        </ul>
+    </div>
+    <div class="menu-ber-section ">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+   </nav>
 </body>
 </html>
