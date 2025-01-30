@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,24 +17,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome kit link -->
     <script src="https://kit.fontawesome.com/71c2b966f1.js" crossorigin="anonymous"></script>
-     <!-- tailwind customize section -->
-     <script>
+    <!-- tailwind customize section -->
+    <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
-      <style>
-         .sora-font {
+    </script>
+    <style>
+        .sora-font {
             font-family: "Sora", serif;
 
         }
-        
+
         .menu-ber-section {
             display: none;
         }
@@ -72,38 +73,49 @@
 
 
         }
-      </style>
+    </style>
 
 
 </head>
-<body class="sora-font">
-   <nav class="container mx-auto flex justify-between items-center mt-1 nbb ">
-    <div class="logo-for-big-screen">
-        <img class="h-8" src="assets/logo-header.png" alt="header logo">
-    </div>
-    <div class="mobile-logo">
-        <img src="assets/Group.png" alt="logo for mobile">
-    </div>
-    <div class="nav-PSC-section">
-        <ul class="flex gap-5 items-center">
-            <li>Product</li>
-            <li>Services</li>
-            <li>Contact us</li>
 
-        </ul>
-    </div>
-    <div class="nav-icon-btn">
-        <ul class="flex gap-5 items-center ">
-            <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            <li><i class="fa-solid fa-cart-shopping"></i></li>
-            <li><button class="border border-green-800 py-1 px-3 font-bold rounded-md">Login</button></li>
-            <li><button class="bg-green-700 text-white font-normal px-3 py-1 rounded-md">Register</button>
-            </li>
-        </ul>
-    </div>
-    <div class="menu-ber-section ">
-        <i class="fa-solid fa-bars"></i>
-    </div>
-   </nav>
+<body class="sora-font">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <nav class="container mx-auto flex justify-between items-center mt-1 nbb pb-1">
+            <div class="logo-for-big-screen w-3/12">
+                <img class="h-8 " src="assets/logo-header.png" alt="header logo">
+            </div>
+            <div class="mobile-logo">
+                <img src="assets/Group.png" alt="logo for mobile">
+            </div>
+            <div class="nav-PSC-section">
+                <ul class="flex md:gap-4 lg:gap-5 items-center">
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+
+                </ul>
+            </div>
+            <div class="nav-icon-btn">
+                <ul class="flex md:gap-5 lg:gap-10 items-center ">
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    <li><button class="border border-green-800 py-1 px-3 font-bold rounded-md">Login</button></li>
+                    <li><button class="bg-green-700 text-white font-normal px-3 py-1 rounded-md">Register</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-ber-section ">
+                <i class="fa-solid fa-bars text-green-800"></i>
+            </div>
+        </nav>
+        <section class="container mx-auto my-10 ">
+            <h1 class="text-4xl font-semibold text-center">Freshness <span class="text-green-600 ">You Can <br>
+                    Count</span> On, Prices You’ll Love!</h1>
+            <p class="lg:w-1/2 mx-auto text-center">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                covered every day!</p>
+                <div class=" mx-auto"><img class="h-full mx-auto" src="assets/hero-vegetables.png" alt=""></div>
+        </section>
+    </header>
 </body>
+
 </html>
