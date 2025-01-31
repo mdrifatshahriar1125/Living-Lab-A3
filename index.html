@@ -380,12 +380,12 @@
 
         </section>
         <!-- FAQ section -->
-        <section>
+        <section class="mb-20">
             <h1 class="container mx-auto py-3 text-3xl font-bold text-green-600 border-b-4 border-green-600">Frequently
                 Asked Questions</h1>
             <div class="container mx-auto mb-5 space-y-3">
                 <!-- question 1 -->
-                <div class="collapse collapse-arrow bg-[#EFEBE3] rounded-t-none">
+                <div class="collapse collapse-arrow bg-[#EFEBE3] rounded-t-none ">
                     <input type="radio" name="my-accordion-2" checked="checked" />
                     <div class="collapse-title text-xl font-medium">Do I need to create an account to place an order?
                     </div>
@@ -431,58 +431,67 @@
                 </div>
             </div>
 
+        
+
         </section>
 
     </main>
-    <footer>
+
+    <footer class="relative pt-40 lg:py-0 ">
         <!-- footer upper card section -->
-        <div
-            class="container mx-auto flex flex-col lg:flex-row justify-center items-center bg-[#EFEBE3] p-10 rounded-lg">
-            <!-- image section -->
-            <div class=" flex justify-center items-center">
-                <img class="lg:h-8/12 lg:w-8/12" src="assets/vegetable-busket.png" alt="">
+        <div class="container bg-[#EFEBE3] gap-y-5 w-10/12 lg:w-full flex flex-col lg:flex-row items-center justify-around px-5 lg:px-12 py-5 lg:py-12 rounded-3xl absolute left-1/2 transform -translate-x-1/2 top-8 lg:-top-2">
+            <!-- card image -->
+            <div>
+                <img src="assets/vegetable-busket.png" alt="">
             </div>
-            <div class=" flex justify-center items-center">
-                <div class="space-y-5 pt-7">
-                    <h1 class=" text-3xl font-semibold text-center lg:text-left">Get Grocery News!</h1>
-                    <p class="text-center">Exclusive training tips, ticks, product deals and more.</p>
-                    <input class="mx-auto border-spacing-2 bg-white rounded-sm py-2 w-full  " type="email" name="" id=""
-                        placeholder="Enter email...">
-                    <button
-                        class=" mx-auto lg:ml-0 block px-5 py-2 bg-green-600 text-white rounded-lg">Subscribe</button>
+            <!-- description part -->
+             <div class="text-center lg:text-start">
+                <h1 class="font-semibold text-4xl">Get Grocery News!</h1>
+                <p class="text-xl lg:py-6">
+                Exclusive training tips, ticks, product deals and more.
+                </p>
+                <div class="pb-2">
+                    <input class="bg-white rounded-lg pl-5 w-10/12 my-4 py-4" type="email" placeholder="Enter email">
                 </div>
-            </div>
+                <button class="btn bg-[#179800] text-[#EFEBE3] text-xl px-7 py-3 border-none">Subscribe</button>
+             </div>
         </div>
-        <!-- footer lower section -->
-        <div class="bg-[#179800] pt-48 ">
+        
+        <!-- another way -->
+        <!-- <div class="relative top-64  lg:top-40 z-20 w-10/12 lg:w-full container mx-auto flex flex-col lg:flex-row justify-center items-center bg-[#EFEBE3] p-10 rounded-lg"> -->
 
-            <div
-                class="container mx-auto flex lg:justify-between lg:items-center flex-col lg:flex-row gap-6 text-white">
-                <!-- 1st part -->
-                <div class=" flex-1">
-                    <div>
-                        <img src="assets/logo-footer.png" alt="footer logo">
+        
+        <div class="pt-52">
+            <div class="bg-[#179800] pt-80 pl-5 lg:pl-0  pb-20">
+
+                <div
+                    class="container mx-auto flex lg:justify-between lg:items-center flex-col lg:flex-row gap-6 text-white">
+                    <!-- 1st part -->
+                    <div class=" flex-1">
+                        <div>
+                            <img src="assets/logo-footer.png" alt="footer logo">
+                        </div>
+                        <p class="lg:w-4/5">Discover a world of treats, toys, and essentials handpicked for your furry
+                            friends</p>
                     </div>
-                    <p class="lg:w-4/5">Discover a world of treats, toys, and essentials handpicked for your furry
-                        friends</p>
+                    <!-- 2nd part -->
+                    <div class="flex-1 flex lg:justify-center">
+                        <div class=" space-y-5">
+                            <h2>Product</h2>
+                            <h2>Service </h2>
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>
+                     <!--3rd part -->  
+                     <div class="flex-1 lg:pt-12 flex lg:justify-end">
+                        <div class="">
+                            <h2 class="inline-block">Follow Us</h2>
+                            <img src="assets/Group 9168.png" alt="">
+                        </div>
+                     </div>
+    
+    
                 </div>
-                <!-- 2nd part -->
-                <div class="flex-1 flex lg:justify-center">
-                    <div class=" space-y-5">
-                        <h2>Product</h2>
-                        <h2>Service </h2>
-                        <h2>Contact Us</h2>
-                    </div>
-                </div>
-                 <!--3rd part -->  
-                 <div class="flex-1 lg:pt-12 flex lg:justify-end">
-                    <div class="">
-                        <h2 class="inline-block">Follow Us</h2>
-                        <img src="assets/Group 9168.png" alt="">
-                    </div>
-                 </div>
-
-
             </div>
         </div>
     </footer>
