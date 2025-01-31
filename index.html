@@ -42,9 +42,9 @@
         .mobile-logo {
             display: none;
         }
-        @media screen and (max-width:768px){
+        @media screen and (max-width:1023px){
             .last-card{
-                display: none;
+                display: none !important;
             }
         }
 
@@ -337,7 +337,38 @@
                 </div>
             </div>
         </section>
-        <!--  -->
+        <!-- Arrival & Offers -->
+         <section class="space-y-5">
+            <h1 class=" container mx-auto text-2xl font-bold text-green-600">Arrival & Offers</h1>
+            <!-- product  -->
+            <div class="container mx-auto flex flex-col lg:flex-row  gap-5 pt-7">
+                 <!-- 1st product -->
+                <div class="text-white flex w-full lg:w-7/12 rounded-lg bg-green-800 space-y-10 pl-7 pt-10">
+                    <div class="space-y-5 flex flex-col flex-1">
+                        <img class="pt-3 w-3/5 " src="assets/dawat-logo.png" alt="">
+                        <h1 class="rounded-lg w-3/4  font-semibold border border-spacing-2 text-center  py-2 text-white bg-[#63B76D]">Cook Exotic Dishes</h1>
+                        <h1 class="font-bold text-3xl pt-3">UP to 20% OFF</h1>
+                    </div>
+                    <div class="flex flex-1">
+                        <img src="assets/dawat-mock-up.png" alt="">
+                    </div>
+                    
+                </div>
+                <!-- 2nd product -->
+                <div class="text-white flex w-full lg:w-5/12 rounded-lg bg-[#102861] space-y-10 pl-7 pt-10">
+                    <div class="space-y-5 flex flex-col flex-1">
+                        <img class="pt-3 w-3/5 " src="assets/india-gate-logo.png" alt="">
+                        <h1 class="rounded-lg w-3/4  font-semibold border border-spacing-2 text-center  py-2 text-white bg-[#63B76D]">Cook Exotic Dishes</h1>
+                        <h1 class="font-bold text-3xl pt-3">UP to 20% OFF</h1>
+                    </div>
+                    <div class="flex flex-1">
+                        <img src="assets/india-gate-mock-up.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+         </section>
        
     </main>
 </body>
