@@ -47,7 +47,12 @@
             .last-card {
                 display: none !important;
             }
+            .nav-PSC-section {
+                display: none;
+            }
+
         }
+        
 
         @media screen and (max-width:639px) {
 
@@ -61,9 +66,7 @@
                 width: 35px;
             }
 
-            .nav-PSC-section {
-                display: none;
-            }
+            
 
             .nav-icon-btn {
                 display: none;
@@ -88,26 +91,26 @@
 <body class="sora-font">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
         <nav class="container mx-auto flex justify-between items-center mt-1 nbb pb-1">
-            <div class="logo-for-big-screen w-3/12">
-                <img class="h-8 " src="assets/logo-header.png" alt="header logo">
+            <div class="logo-for-big-screen w-3/12 ">
+                <img class="h-11 " src="assets/logo-header.png" alt="header logo">
             </div>
             <div class="mobile-logo">
                 <img src="assets/Group.png" alt="logo for mobile">
             </div>
             <div class="nav-PSC-section">
-                <ul class="flex md:gap-4 lg:gap-5 items-center">
+                <ul class="flex md:gap-4 lg:gap-8 items-center text-xl">
                     <li>Product</li>
                     <li>Services</li>
                     <li>Contact us</li>
 
                 </ul>
             </div>
-            <div class="nav-icon-btn">
-                <ul class="flex md:gap-5 lg:gap-10 justify-end items-center ">
+            <div class="nav-icon-btn ">
+                <ul class="flex sm:gap-1 md:gap-3 lg:gap-7 justify-end items-center ">
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>
                     <li><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li><button class="border border-green-800 py-1 px-3 font-bold rounded-md">Login</button></li>
-                    <li><button class="bg-green-700 text-white font-normal px-3 py-1 rounded-md">Register</button>
+                    <li><button class="btn border border-[#179800]  px-6 font-bold rounded-md hover:bg-yellow-400">Login</button></li>
+                    <li><button class="btn bg-[#179800] text-white font-normal px-7  rounded-md hover:bg-yellow-400">Register</button>
                     </li>
                 </ul>
             </div>
@@ -453,7 +456,7 @@
                 <div class="pb-2">
                     <input class="bg-white rounded-lg pl-5 w-10/12 my-4 py-4" type="email" placeholder="Enter email">
                 </div>
-                <button class="btn bg-[#179800] text-[#EFEBE3] text-xl px-7 py-3 border-none">Subscribe</button>
+                <button class="btn bg-[#179800] text-[#EFEBE3] text-xl px-7 py-3 border-none hover:bg-yellow-300">Subscribe</button>
              </div>
         </div>
         
