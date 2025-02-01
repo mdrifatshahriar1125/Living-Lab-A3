@@ -84,15 +84,6 @@
 
         @media screen and (max-width:639px) {
 
-            .menu-ber-section {
-                display: inline-block;
-                width: 25px;
-            }
-
-            .mobile-logo {
-                display: inline-block;
-                width: 35px;
-            }
 
             .nav-icon-btn {
                 display: none;
@@ -120,7 +111,8 @@
             <div class="logo-for-big-screen w-3/12 ">
                 <img class="h-11 " src="assets/logo-header.png" alt="header logo">
             </div>
-            <div class="mobile-logo">
+            <!-- logo for mobile device small than 639px -->
+            <div class=" block sm:hidden ">
                 <img src="assets/Group.png" alt="logo for mobile">
             </div>
             <div class="nav-PSC-section">
@@ -143,7 +135,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="menu-ber-section ">
+            <div class="block sm:hidden lg:hidden md:hidden pr-2">
                 <i class="fa-solid fa-bars text-green-800"></i>
             </div>
         </nav>
