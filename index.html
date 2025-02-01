@@ -70,28 +70,10 @@
         }
 
 
-        @media screen and (max-width:1023px) {
-            .last-card {
-                display: none !important;
-            }
-
-            .nav-PSC-section {
-                display: none;
-            }
-
-        }
+        
 
 
         @media screen and (max-width:639px) {
-
-
-            .nav-icon-btn {
-                display: none;
-            }
-
-            .logo-for-big-screen {
-                display: none;
-            }
 
             .nbb {
                 border-bottom: 2px solid green;
@@ -108,14 +90,15 @@
 <body class="sora-font">
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
         <nav class="container mx-auto flex justify-between items-center mt-1 nbb pb-1">
-            <div class="logo-for-big-screen w-3/12 ">
+            <!-- logo-for-big-screen -->
+            <div class=" hidden sm:block w-3/12 ">
                 <img class="h-11 " src="assets/logo-header.png" alt="header logo">
             </div>
             <!-- logo for mobile device small than 639px -->
             <div class=" block sm:hidden ">
                 <img src="assets/Group.png" alt="logo for mobile">
             </div>
-            <div class="nav-PSCsection hidden lg:block ">
+            <div class=" hidden lg:block ">
                 <ul class="flex md:gap-4 lg:gap-8 items-center text-xl">
                     <li>Product</li>
                     <li>Services</li>
@@ -123,7 +106,7 @@
 
                 </ul>
             </div>
-            <div class="nav-iconbtn hidden sm:block ">
+            <div class=" hidden sm:block ">
                 <ul class="flex sm:gap-1 md:gap-3 lg:gap-7 justify-end items-center ">
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>
                     <li><i class="fa-solid fa-cart-shopping"></i></li>
@@ -349,8 +332,11 @@
                             </div>
                         </div>
                     </div>
+                    
                     <!-- card 9 -->
-                    <div class="p-2 flex gap-3 bg-white rounded-lg flex-1 last-card">
+                     <!-- hidden lg:block -->
+                   <div class="hidden lg:block">
+                    <div class="p-2 flex gap-3 bg-white rounded-lg flex-1">
                         <!-- vegetable image -->
                         <div class="rounded-xl">
                             <img src="assets/potato.png" alt="">
@@ -367,6 +353,7 @@
                             </div>
                         </div>
                     </div>
+                   </div>
 
                 </div>
             </div>
